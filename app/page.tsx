@@ -64,7 +64,7 @@ function StationCard({
     try {
 
       const res = await fetch(
-        `http://164.68.98.73:3000/api/switch-station?station=${station}`
+        `//164.68.98.73:3000/api/switch-station?station=${station}`
       )
 
       const data = await res.json()
@@ -178,7 +178,7 @@ export default function Home() {
   useEffect(() => {
 
     fetch(
-      'http://164.68.98.73:3000/api/status'
+      '//164.68.98.73:3000/api/status'
     )
       .then(res => res.json())
       .then(data => {
@@ -203,7 +203,7 @@ useEffect(() => {
 
       const res =
         await fetch(
-          'http://164.68.98.73:3000/api/tracks'
+          '//164.68.98.73:3000/api/tracks'
         )
 
       const data =
@@ -237,7 +237,7 @@ useEffect(() => {
 
         const res =
           await fetch(
-            'http://164.68.98.73:3000/api/now-playing'
+            '//164.68.98.73:3000/api/now-playing'
           )
 
         const data =
@@ -280,7 +280,7 @@ useEffect(() => {
 
       const res =
         await fetch(
-          'http://164.68.98.73:3000/api/tracks'
+          '//164.68.98.73:3000/api/tracks'
         )
 
       const data =
@@ -584,7 +584,7 @@ useEffect(() => {
             const res =
               await fetch(
 
-                'http://164.68.98.73:3000/api/upload-audio',
+                '//164.68.98.73:3000/api/upload-audio',
 
                 {
                   method:'POST',
